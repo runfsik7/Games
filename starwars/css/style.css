@@ -1,0 +1,31 @@
+.battleGround{
+	width:600px;
+	height:500px;
+	margin:0 auto;
+	border:1px solid black;
+	position:relative;
+}
+
+#battleShip{
+	width:20px;
+	height: 7px;
+	position:absolute;
+	left:300px;
+	top:494px;
+	background: black;
+}
+
+.enemy{
+	width:15px;
+	height:5px;
+	position:absolute;
+	top:0px;
+	background-color:red;
+}
+
+.bullet{
+	width:2px;
+	height: 3px;
+	background-color:black;
+	position: absolute;
+}
