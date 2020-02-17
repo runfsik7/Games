@@ -8,12 +8,13 @@ $(document).ready(function(){
 		bullet = '<div class=bullet>&nbsp;</div>',
 		shots = parseInt($('#shots').text()),
 		destr = parseInt($('#destr').text());
+        level = 1;
 
 
 
-	 setInterval(spawnEvent, 3000);
+	 setInterval(spawnEvent, 3000 / level);
 	 setInterval(bulletMove, 100);
-	 setInterval(enemyMove, 100);
+	 setInterval(enemyMove, 100 / level);
 	 setInterval(shopChecker, 100);
 	 $( document ).keypress(function( event ) {
 	 	switch(event.which){
@@ -48,7 +49,7 @@ $(document).ready(function(){
 					$('#destr').text(destr);
 				}
 				}
-				
+
 			});
 		});
 	}
